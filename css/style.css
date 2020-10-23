@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,900;1,400;1,500;1,800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    background-color: firebrick;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.inner-width {
+
+    margin: 0;
+    padding: 0 20px;
+}
+
+.navbar .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .inner-width .logo {
+    color: #111;
+    font-size: 27px;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar .inner-width .menu-toggle {
+    border: none;
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+    outline: none;
+    background-color: transparent;
+    display: none;
+}
+
+.navbar .inner-width .menu-toggle span {
+    width: 20px;
+    display: block;
+    height: 2px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+    position: relative;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.navbar .inner-width .navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.navbar .inner-width .navbar-menu a:last-child {
+    margin-left: 0;
+}
+
+/*  Home */
+
+#home {
+    height: 100vh;
+    width: 100%;
+    min-height: 500px;
+    background: url(../assets/images/pexels-fox-1038916.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home .inner-width {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 2.5em;
+
+}
+
+.content h1::after {
+    content: " Veysel GÜNEŞ";
+    animation: anime 10s infinite;
+    -webkit-animation: anime 10s infinite;
+
+}
+
+@keyframes anime {
+    25% {
+        content: " a Developer";
+    }
+
+    50% {
+        content: " a Frontend Developer";
+    }
+
+    75% {
+        content: " a Youtuber";
+    }
+}
+
+.social-icon a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 10px 10px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.social-icon a:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+
+}
+
+.buttons {
+    margin: 65px 0 0 0;
+}
+
+.buttons a {
+    margin-right: 50px;
+    color: firebrick;
+    padding: 10px 15px;
+    border: 2px solid firebrick;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.buttons a:nth-child(2),
+.buttons a:hover {
+    background-color: firebrick;
+}
