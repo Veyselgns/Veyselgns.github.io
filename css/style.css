@@ -91,6 +91,7 @@
 .sticky {
     background-color: #ddd;
     padding: 10px 0;
+    z-index: 1000;
 }
 
 .sticky .inner-width .navbar-menu a {
@@ -231,6 +232,7 @@
 
     .sticky {
         background-color: transparent;
+        z-index: 1000;
 
     }
 
@@ -334,3 +336,94 @@
 }
 
 .about-text {
+    margin: 10px;
+}
+
+.about-text h2 {
+    font-size: 23px;
+    text-transform: capitalize;
+
+}
+
+.about-text h3 span {
+    position: relative;
+    padding-right: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+
+
+.about-text h3 span::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: -13px;
+    bottom: calc(50% - 5px);
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 60px
+}
+
+.skill {
+    width: calc(50% - 20px);
+    margin: 15px 0;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar {
+    height: 6px;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 10px;
+}
+
+.skill-bar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    background-color: firebrick;
+    height: 6px;
+}
+
+.html::after {
+    width: 90%;
+}
+
+.js::after {
+    width: 70%;
+}
+
+.css::after {
+    width: 80%;
+}
+
+.php::after {
+    width: 80%;
+}
+
+.mysql::after {
+    width: 85%;
+}
+
+.cs::after {
+    width: 85%;
+}
